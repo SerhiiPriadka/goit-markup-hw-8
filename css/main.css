@@ -69,10 +69,17 @@ img {
 .header__link,
 .footer__link {
   font-family: var(--secondary-font);
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-cl);
+}
+@media screen and (min-width: 1600px) {
+  .header__link,
+.footer__link {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__primary {
@@ -160,6 +167,31 @@ img {
   color: var(--secondary-txt);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.menu-btn {
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+}
+.menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+.menu-btn__icon-open {
+  opacity: 1;
+}
+.menu-btn__icon-close {
+  opacity: 0;
 }
 
 /* Стили для модального окна */
@@ -350,18 +382,42 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1200px;
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+}
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
   background: var(--secondary-font);
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__link {
   margin-right: 93px;
@@ -389,6 +445,11 @@ img {
 .header__container {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+  }
 }
 .header__item--current::after {
   position: absolute;
@@ -437,6 +498,14 @@ img {
 .header__item__icon {
   margin-right: 10px;
 }
+.header__nav {
+  display: none;
+}
+@media screen and (min-widht: 768px) {
+  .header__nav {
+    display: block;
+  }
+}
 
 .nav__item {
   margin-right: 50px;
@@ -446,9 +515,7 @@ img {
 }
 
 .contact__list {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  display: none;
 }
 
 /* Секция Герой */
