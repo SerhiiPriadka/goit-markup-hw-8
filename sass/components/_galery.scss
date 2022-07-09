@@ -1,17 +1,18 @@
 /* Галерея */
 
 .galery {
+    display: none;
     padding-top: 0;
+
+    @media screen and (min-width: 1200px) {
+        display: contents;
+    }
+
 &__list {
     display: flex;
+    gap: 30px;
 }
-&__item {
-    margin-right: 30px;
-    margin-left: auto;
-}
-&__item:last-child {
-    margin: 0;
-}
+
 &--thumd {
     position: relative;
 }
