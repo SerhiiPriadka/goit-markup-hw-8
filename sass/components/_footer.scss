@@ -1,8 +1,23 @@
 /* Футер */
 .footer {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+
     background: var(--dark-fons);
+
+    @media screen and (min-width:1200px) {
+        padding: 60px 200px;
+        
+    }
+
+// &__contacts{
+//     // display: flex;
+//     // flex-direction: column;
+//     // align-items: center;
+
+// }
+
 &--gps {
     font-style: normal;
     font-size: 14px;
@@ -35,18 +50,30 @@
 }
 &__container {
     margin-top: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 &__social {
+    margin-top: 20px;
     display: flex;
+    justify-content: center;
 }
 &__item {
     margin-bottom: 9px;
-    &:last-child {
-        margin: 0;
-    }
+        &:last-child {
+            margin: 0;
+        }
 }
 &__social__container {
-    margin-left: 70px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        
+    }
+    
 }
 &__icon {
     fill: var(--secondary-txt);
@@ -59,17 +86,53 @@
     text-transform: uppercase;
     color: var(--secondary-txt);
 }
-&__sumint {
+&__submint {
+    width: 100%;
+    margin-top: 20px;
     display: flex;
-    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    
+    }
 }
 }
 
 .repit {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+    max-width: 768px;
     align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+@media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+
+
 }
 
 .submint {
-    margin-left: auto;
+    width: 100%;
+
+    
 }

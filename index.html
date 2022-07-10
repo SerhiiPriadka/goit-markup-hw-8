@@ -18,16 +18,15 @@
 <body>
 
     <!-- Header -->
-    <!-- <header class="header"> -->
-        <!-- Лого -->
+    <header class="header">
+        <!-- Logo -->
         <div class="container header__container">
             <a class="link header__link" href="./index.html" lang="en">
                 <h3>Web<span class="logo__primary">Studio</span></h3>
             </a>
-            <button class="menu-btn" type="button" aria-label="Кнопуа открыьтя меню" aria-expanded="false" menu-open-btn>
+            <button class="menu-btn__open" type="button" aria-label="Кнопуа открыьтя меню" aria-expanded="false" menu-btn__open>
                 <svg class="menu-btn__icon" width="40" heigth="40">
                     <use class="menu-btn__icon-open" href="./images/icons.svg#open-menu-icon"></use>
-                    <use class="menu-btn__icon-close" href="./images/icons.svg#close-menu-icon"></use>
                 </svg>
             </button>
             <nav class="header__nav">
@@ -61,7 +60,7 @@
     
     <!-- Main -->
     <!-- <main>
-         <-- Baner -->
+         <-- Hero -->
         <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -72,7 +71,7 @@
         <!-- About -->
         <section class="about section">
             <div class="container">
-             <!-- <h2 class="title">Наши преимущества</h2> -->
+            <!-- <h2 class="title">Наши преимущества</h2> -->
                 <ul class="list about__list">
                     <li class="about__item">
                         <div class="about--icons">
@@ -358,9 +357,9 @@
     </main>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
        <div class="container repit">
-           <div>
+           <div class="footer__contacts">
                 <a class="link footer__link" href="./index.html" lang="en">
                 <h3>Web<span class="logo__secondary">Studio</span></h3></a>
                 <address class="footer__adress">
@@ -420,7 +419,7 @@
                 </div>
                 <div class="submint">
                     <p class="footer--p-title">Подпишитесь на рассылку</p>
-                    <form class="list footer__sumint">
+                    <form class="list footer__submint">
                         <input class="submint--input" type="email" name="name" minlength="3" placeholder="E-mail">
                         <button class="submit--btn" type="submit">
                             Подписаться
@@ -431,7 +430,7 @@
                     </form>
                 </div>    
         </div>
-    </footer> -->
+    </footer>
     
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
@@ -489,8 +488,14 @@
     </div>
 
     <!-- Мобильное меню -->
-    <!-- <div class="mobile-overlay">
-        <div class="mobile-menu">
+    <!-- <div class="mobile-menu is-hidden">
+            <div class="container">
+            <div class="mobile-menu__top">
+                <button class="menu-btn__close" type="button">
+                    <svg class="menu-btn__icon" width="40" heigth="40">
+                        <use class="menu-btn__icon-close" href="./images/icons.svg#close-menu-icon"></use>
+                    </svg>
+                </button>
             <nav class="mobile-nav">
                 <ul class="list mobile-nav__list">
                     <li class="mobile-nav__item">
@@ -504,7 +509,9 @@
                     </li>
                 </ul>
             </nav>
+            </div>
             
+            <div class="mobile-menu__bottom">
             <div class="mobile-menu__contact">
             <ul class="list mobile-contact__list">
                 <li class="mobile-contact__item">
@@ -544,10 +551,12 @@
                 </li>
 
             </ul>
-
-        </div>
+            </div>
+            </div>
     </div> -->
-    <script src="./js/modal.js"></script> 
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>

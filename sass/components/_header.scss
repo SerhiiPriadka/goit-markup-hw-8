@@ -3,13 +3,13 @@
     padding-bottom: 16px;
     border-bottom: 1px solid #ececec;
     background: var(--secondary-font);
-
+    
     @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
     }
@@ -37,7 +37,9 @@
 &__list {
     display: flex;
     align-items: center;}
+
 &__container {
+    width: 100%;
     display: flex;
     align-items: center;
 
@@ -94,19 +96,29 @@
     display: none;
 
     @media screen and (min-widht: 768px) {
-        display: block;
+        display: flex;
     }
+    @media screen and (min-widht: 1200px) {
+        display: flex;
+    }
+
     }
 
 }
 .nav__item {
-    margin-right: 50px;
-&__item:last-child {
-    margin: 0;
-    }
+    gap: 50px;
+
 }
 .contact__list {
     display: none;
+
+    @media screen and (min-widht: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-widht: 1200px) {
+        display: flex;
+    }
     // display: flex;
     // margin-left: auto;
     // align-items: center;

@@ -1,8 +1,9 @@
-.menu-btn {
+.menu-btn__open {
     display: block;
-    padding: 0;
     width: 40px;
     height: 40px;
+    padding: 0;
+    cursor: pointer;
     background-color: transparent;
     border: transparent;
     outline: transparent;
@@ -10,17 +11,28 @@
     @media screen and (min-width: 768px) {
         visibility: hidden;
     }
-
-&__icon{
+}
+.menu-btn__icon{
     width: 40px;
     height: 40px;
-
-    &-open{
-        opacity: 1;
-    }
-
-    &-close{
-        opacity: 0;
-    }
 }
+
+.menu-btn__open:focus{
+    fill: var(--accent-txt);
+}
+
+.menu-btn__close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    margin-left: auto;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+}
+
+.menu-btn__close:focus{
+    fill: var(--accent-txt);
 }
