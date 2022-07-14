@@ -2,11 +2,27 @@
 &--list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    justify-content: center;
+    gap: 30px;
+
+    @media screen and (min-width: 768px){
+    justify-content:space-between}
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
+
 }
 &__item {
     position: relative;
-    margin: 15px;
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 60px) / 2);
+            
+        }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 3);
+    }
+    
 }
 &--link {
     display: block;
@@ -30,7 +46,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 77px 24px;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
@@ -38,6 +54,13 @@
     transition: transform var(--anim);
     color: var(--secondary-txt);
     background-color: rgba(33, 150, 243, 0.9);
+
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px 77px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+    }
 }
 &__footer {
     padding-top: 20px;

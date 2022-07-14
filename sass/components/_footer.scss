@@ -104,7 +104,6 @@
 }
 
 .repit {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +111,6 @@
     gap: 60px;
 
     @media screen and (min-width: 768px) {
-    max-width: 768px;
     align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
@@ -120,19 +118,10 @@
     }
 
 @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     align-items: baseline;
     flex-direction: row;
     flex-wrap: nowrap;
     text-align: left;
 }
 
-
-
-}
-
-.submint {
-    width: 100%;
-
-    
 }

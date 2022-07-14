@@ -31,14 +31,22 @@
 
 .nav--list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .nav__wrapper {
-    margin-right: 8px;
-    &:last-child {
-    margin: 0;
-        }
+    margin-bottom: 7px;
 }

@@ -36,7 +36,7 @@
             </ul>
         </nav>
             <ul class="list contact__list">
-                <li class="item">
+                <li class="contact__item">
                     <a class="link header__mail header--icon" href="mailto:info@devstudio.com">
                         <svg class="header__item__icon" width="16" height="12">
                             <use href="./images/icons.svg#envelope"></use>
@@ -44,7 +44,7 @@
                         <span class="header__item__txt">info@devstudio.com</span>
                     </a>
                 </li>
-                <li class="item">
+                <li class="contact__item">
                     <a class="link header__phone header--icon" href="tel:+380961111111">
                         <svg class="header__item__icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
@@ -58,23 +58,38 @@
 
     <!-- <main class="main"> -->
         <!-- Кнопки навигации  -->
-        <!-- <section class="section">
-        <div class="container"> -->
-                <!-- <ul class="list nav--list">
+        <section class="section">
+        <div class="container">
+                <ul class="list nav--list">
                     <li class="nav__wrapper"><button class="nav--link active">Все</button></li>
                     <li class="nav__wrapper"><button class="nav--link">Веб-сайты</button></li>
                     <li class="nav__wrapper"><button class="nav--link">Приложения</button></li>
                     <li class="nav__wrapper"><button class="nav--link">Дизайн</button></li>
                     <li class="nav__wrapper"><button class="nav--link">Маркетинг</button></li>
-                </ul> -->
+                </ul>
             <!-- Прокеты -->
             <!-- <h1>Проекты</h1> -->
-                <!-- <ul class="list project--list">
+                <ul class="list project--list">
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/techno.jpg" alt="Технокряк"
-                        width="370" height="294">
+                        <picture>
+                            <source 
+                                srcset="./images/portfolio/techno-desktop.jpg 1x,
+                                        ./images/portfolio/techno-desktop-2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/portfolio/techno-tablet.jpg 1x,
+                                        ./images/portfolio/techno-tablet-2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/portfolio/techno-mobile.jpg 1x,
+                                        ./images/portfolio/techno-mobile-2x.jpg 2x" 
+                                media="(min-width: 320px)">
+                            <img 
+                                src="./images/portfolio/techno-mobile.jpg" 
+                                alt="Технокряк">
+                        </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -88,8 +103,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/poster.jpg" alt="Постер New Orlean vs Golden Star"
-                        width="370" height="294">
+                            <picture>
+                                <source 
+                                    srcset="./images/portfolio/poster-desktop.jpg 1x,
+                                            ./images/portfolio/poster-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/portfolio/poster-tablet.jpg 1x,
+                                            ./images/portfolio/poster-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/portfolio/poster-mobile.jpg 1x,
+                                            ./images/portfolio/poster-mobile-2x.jpg 2x" 
+                                    media="(min-width: 320px)">
+                            <img
+                                src="./images/portfolio/poster-mobile.jpg" 
+                                alt="Постер New Orlean vs Golden Star">
+                        </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -103,8 +133,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood"
-                        width="370" height="294">
+                        <picture>
+                            <source 
+                                srcset="./images/portfolio/seafood-desktop.jpg 1x,
+                                        ./images/portfolio/seafood-desktop-2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/portfolio/seafood-tablet.jpg 1x,
+                                        ./images/portfolio/seafood-tablet-2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/portfolio/seafood-mobile.jpg 1x,
+                                        ./images/portfolio/seafood-mobile-2x.jpg 2x" 
+                                media="(min-width: 320px)">
+                            <img
+                                src="./images/portfolio/seafood-mobile.jpg" 
+                                alt="Ресторан Seafood">
+                        </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -118,8 +163,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/projectprime.jpg" alt="Проект Prime"
-                        width="370" height="294">
+                        <picture>
+                            <source 
+                                srcset="./images/portfolio/projectprime-desktop.jpg 1x,
+                                        ./images/portfolio/projectprime-desktop-2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/portfolio/projectprime-tablet.jpg 1x,
+                                        ./images/portfolio/projectprime-tablet-2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/portfolio/projectprime-mobile.jpg 1x,
+                                        ./images/portfolio/projectprime-mobile-2x.jpg 2x" 
+                                media="(min-width: 320px)">
+                            <img
+                                src="./images/portfolio/projectprime-mobile.jpg" 
+                                alt="Проект Prime">
+                        </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -132,8 +192,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/projectbox.jpg" alt="Проект Boxes"
-                        width="370" height="294">
+                        <picture>
+                            <source 
+                                srcset="./images/portfolio/projectbox-desktop.jpg 1x,
+                                        ./images/portfolio/projectbox-desktop-2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/portfolio/projectbox-tablet.jpg 1x,
+                                        ./images/portfolio/projectbox-tablet-2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/portfolio/projectbox-mobile.jpg 1x,
+                                        ./images/portfolio/projectbox-mobile-2x.jpg 2x" 
+                                media="(min-width: 320px)">
+                            <img
+                                src="./images/portfolio/projectbox-mobile.jpg"
+                                alt="Проект Boxes">
+                        </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -147,8 +222,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/inspiration.jpg" alt="Inspiration has no Borders"
-                        width="370" height="294">
+                            <picture>
+                                <source 
+                                    srcset="./images/portfolio/inspiration-desktop.jpg 1x,
+                                            ./images/portfolio/inspiration-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/portfolio/inspiration-tablet.jpg 1x,
+                                            ./images/portfolio/inspiration-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/portfolio/inspiration-mobile.jpg 1x,
+                                            ./images/portfolio/inspiration-mobile-2x.jpg 2x" 
+                                    media="(min-width: 320px)">
+                                <img
+                                    src="./images/portfolio/inspiration-mobile.jpg"
+                                    alt="Inspiration has no Borders">
+                            </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -162,8 +252,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/limitededition.jpg" alt="Издание Limited Edition"
-                        width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/limitededition-desktop.jpg 1x,
+                                            ./images/portfolio/limitededition-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/limitededition-tablet.jpg 1x,
+                                            ./images/portfolio/limitededition-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/limitededition-mobile.jpg 1x,
+                                            ./images/portfolio/limitededition-mobile-2x.jpg 2x" 
+                                    media="(min-width: 320px)">
+                                <img
+                                    src="./images/portfolio/limitededition-mobile.jpg"
+                                    alt="Издание Limited Edition">
+                            </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -177,8 +282,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/lab.jpg" alt="Проект LAB"
-                        width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/lab-desktop.jpg 1x,
+                                            ./images/portfolio/lab-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/lab-tablet.jpg 1x,
+                                            ./images/portfolio/lab-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/lab-mobile.jpg 1x,
+                                            ./images/portfolio/lab-mobile-2x.jpg 2x" 
+                                    media="(min-width: 320px)">
+                                <img
+                                    src="./images/portfolio/lab-mobile.jpg"
+                                    alt="Проект LAB">
+                            </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -191,8 +311,23 @@
                 <li class="project__item">
                     <a class="link project--link" href="">
                         <div class="project__thumd">
-                        <img class="" src="./images/portfolio/growingbusiness.jpg" alt="Growing Business"
-                        width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/growingbusiness-desktop.jpg 1x,
+                                            ./images/portfolio/growingbusiness-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/portfolio/growingbusiness-tablet.jpg 1x,
+                                            ./images/portfolio/growingbusiness-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/portfolio/growingbusiness-mobile.jpg 1x,
+                                            ./images/portfolio/growingbusiness-mobile-2x.jpg 2x" 
+                                    media="(min-width: 320px)">
+                                <img
+                                    src="./images/portfolio/growingbusiness-mobile.jpg"
+                                    alt="Growing Business">
+                            </picture>
                         <p class="project--p-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -202,14 +337,14 @@
                         </div>
                     </a>
                 </li>
-                </ul> -->
+                </ul>
         </div>
         </section>
     </main>
     <!-- Подвал -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container repit">
-            <div>
+            <div class="footer__contacts">
                 <a class="link footer__link" href="./index.html" lang="en">
                     <h3>Web<span class="logo__secondary">Studio</span></h3>
                 </a>
@@ -217,26 +352,27 @@
                     <div class="footer__container">
                         <ul class="list footer__list">
                             <li class="footer__item">
-                                <a class="link footer--gps" href="http://goo.gl/maps/y68GMaV9kRyxERHZA" target="_blank" rel="noopener noreferrer">
+                                <a class="link footer--gps" href="http://goo.gl/maps/y68GMaV9kRyxERHZA" target="_blank"
+                                    rel="noopener noreferrer">
                                     г. Киев, пр-т Леси Украинки, 26
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class=" link footer--mail" href="mailto:info@example.com">
-                                info@example.com
+                                <a class="link footer--mail" href="mailto:info@example.com">
+                                    info@example.com
                                 </a>
                             </li>
                             <li class="footer__item">
                                 <a class="link footer--phone" href="tel:+380991111111">
-                                +38 099 111 11 11
+                                    +38 099 111 11 11
                                 </a>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </address>
             </div>
             <div class="footer__social__container">
-                <p class="footer--p-title">ПРИСОЕДЕНЯЙТЕСЬ</p>
+                <p class="footer--p-title">Присоединяйтесь</p>
                 <ul class="list footer__social">
                     <li class="social__item">
                         <a class="link social--link" href="">
@@ -270,7 +406,7 @@
             </div>
             <div class="submint">
                 <p class="footer--p-title">Подпишитесь на рассылку</p>
-                <form class="list footer__sumint">
+                <form class="list footer__submint">
                     <input class="submint--input" type="email" name="name" minlength="3" placeholder="E-mail">
                     <button class="submit--btn" type="submit">
                         Подписаться
@@ -281,6 +417,6 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
