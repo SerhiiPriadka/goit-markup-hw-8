@@ -1,12 +1,15 @@
 .header {
+    width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ececec;
     background: var(--secondary-font);
     
     @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -15,10 +18,23 @@
     }
 
 &__link {
-    margin-right: 93px;}
+
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    
+        }
+    @media screen and (min-width: 1200px) {
+    
+
+        }
+
+}
 
 &__item {
     position: relative;
+    
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -36,20 +52,25 @@
 }
 &__list {
     display: flex;
-    align-items: center;}
+    align-items: center;
+    margin-right: 84px;
+}
+   
+
 
 &__container {
-    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin: 0;
 
-    @media screen and (max-width: 768px) {
-        justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        margin: auto;
     }
 }
 &__item--current::after {
     position: absolute;
-    bottom: -4px;
+    bottom: -2px;
     content: '';
     display: block;
     width: 100%;
@@ -92,14 +113,27 @@
     }}
 &__item__icon {
     margin-right: 10px;}
+
+&__item__txt{
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        }
+     @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+}
 &__nav{
     display: none;
 
-    @media screen and (min-widht: 768px) {
-        display: flex;
+    @media screen and (min-width: 768px) {
+        display: block;
     }
-    @media screen and (min-widht: 1200px) {
-        display: flex;
+    @media screen and (min-width: 1200px) {
+        display: block;
     }
 
     }
@@ -108,18 +142,47 @@
 .nav__item {
     gap: 50px;
 
+    @media screen and (min-width: 768px) {
+        display: block;
+        &:not(:last-child) {
+                margin-right: 50px;
+            }
+
+        }
+    @media screen and (min-width: 1200px) {
+        
+        
+    }
 }
+
+
 .contact__list {
     display: none;
 
-    @media screen and (min-widht: 768px) {
-        display: flex;
+    @media screen and (min-width: 768px) {
+        display: block;
+
+        
     }
 
-    @media screen and (min-widht: 1200px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
+        margin:0;
+        align-items: center;
     }
-    // display: flex;
-    // margin-left: auto;
-    // align-items: center;
+    
+}
+
+.contact__item{
+    @media screen and (min-width: 768px) {
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+    }
+
+    @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+        margin-bottom: 0;
+    }
+        }
 }

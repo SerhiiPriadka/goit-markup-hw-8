@@ -9,8 +9,12 @@
     outline: transparent;
 
     @media screen and (min-width: 768px) {
-        visibility: hidden;
+        display: none;
     }
+    @media screen and (min-width: 1200px) {
+    display: none;
+    }
+
 }
 .menu-btn__icon{
     width: 40px;
