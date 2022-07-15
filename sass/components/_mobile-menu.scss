@@ -18,6 +18,7 @@
                 0px 1px 3px rgba(0, 0, 0, 0.16);
     }
 
+
     .container {
         height: 100%;
         display: flex;
@@ -50,6 +51,11 @@
     
 }
 }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;}
 
 .mobile-phone {
     font-weight: 500;
@@ -101,3 +107,7 @@
     margin-bottom: 32px;
 }
 
+
+.no-scroll{
+    overflow: hidden
+}

@@ -62,7 +62,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    
 
     @media screen and (min-width: 768px) {
         margin: auto;
@@ -77,6 +77,12 @@
     height: 4px;
     background: #2196F3;
     border-radius: 2px;}
+
+    @media screen and (min-width: 1200px) {
+        bottom:-4px;
+    }
+
+
 &--icon {
     fill: currentColor;
 &:hover,

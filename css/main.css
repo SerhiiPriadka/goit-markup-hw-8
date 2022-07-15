@@ -266,6 +266,12 @@ img {
   color: var(--accent-txt);
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .mobile-phone {
   font-weight: 500;
   font-size: 34px;
@@ -307,6 +313,10 @@ img {
   margin-bottom: 32px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Стили для модального окна */
 .backdrop {
   position: fixed;
@@ -329,14 +339,19 @@ img {
 
 .modal__wraper {
   position: absolute;
-  width: 528px;
-  padding: 40px;
+  width: 450px;
+  padding: 25px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--secondary-txt);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__wraper {
+    width: 528px;
+  }
 }
 .modal--icon {
   width: 18px;
@@ -350,10 +365,16 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal--title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 .modal--svg {
   position: absolute;
@@ -361,6 +382,13 @@ img {
   left: 15px;
   transform: translateY(40%);
   transition: fill var(--anim);
+}
+
+.policy-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .policy__link {
@@ -570,7 +598,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .header__container {
@@ -586,6 +613,11 @@ img {
   height: 4px;
   background: #2196F3;
   border-radius: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    bottom: -4px;
+  }
 }
 .header--icon {
   fill: currentColor;
@@ -952,11 +984,6 @@ img {
   padding-bottom: 60px;
   background: var(--dark-fons);
 }
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding: 60px 200px;
-  }
-}
 .footer--gps {
   font-style: normal;
   font-size: 14px;
@@ -1029,6 +1056,15 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__submint {
     flex-direction: row;
+  }
+}
+
+.submint {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .submint {
+    max-width: 570px;
   }
 }
 
