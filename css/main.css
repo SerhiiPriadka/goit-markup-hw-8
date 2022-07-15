@@ -96,13 +96,13 @@ img {
 }
 
 .hero__btn--style {
-  max-width: 200px;
   min-width: 50px;
   padding: 10px 32px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -734,9 +734,7 @@ img {
 
 /* Секция Герой */
 .hero {
-  width: 100%;
-  height: 100%;
-  padding: 118px 45px;
+  padding: 118px 0;
   background-color: var(--dark-fons);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-position: center;
@@ -762,6 +760,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
   }
 }
@@ -770,20 +769,10 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-2x.jpg);
   }
 }
-.hero__container {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .hero__container {
-    padding: 118px 189px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    padding: 200px 250px;
-  }
-}
 .hero__title {
+  max-width: 360px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 26px;
   line-height: 1.62;
@@ -793,6 +782,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
