@@ -16,16 +16,18 @@
 &__item {
     position: relative;
     @media screen and (min-width: 768px) {
-            width: calc((100% - 60px) / 2);
+            width: calc((100% - 30px) / 2);
             
         }
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 90px) / 3);
+        width: calc((100% - 60px) / 3);
     }
     
 }
 &--link {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     transition: box-shadow var(--anim);
     &:hover,
     &:focus {
@@ -63,6 +65,7 @@
     }
 }
 &__footer {
+    flex-grow: 1;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;
